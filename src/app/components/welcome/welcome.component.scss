@@ -33,7 +33,6 @@
                 height: 282px;
                 margin-left: 14px;
                 margin-top: -15px;
-                //border-radius: 50%;
                 background-color: purple;
                 clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 
@@ -49,9 +48,7 @@
                 position: absolute;
                 width: 250px;
                 height: 250px;
-                //border-radius: 50%;
-                clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-                //border: 2px solid purple;               
+                clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);          
 
                 @media only screen and (max-width: 1010px) {
                     width: 150px;
@@ -75,6 +72,7 @@
             @media only screen and (max-width: 1010px) {
                 padding-left: 0;
                 max-width: 300px;
+                margin-top: 20px;
             }
 
             &.visible {
@@ -155,15 +153,14 @@
                     width: auto;
                     padding: 0 16px;
                     height: 30px;
-                    border-radius: 15px;
+                    border-radius: 18px;
                     background-color: purple;
                     color: white;
                     transition: all 0.2s ease-in;
 
                     &:hover {
                         cursor: pointer;
-                        background-color: coral;
-                        color: black;
+                        background-color: tomato;                        
                     }
 
                     mat-icon {   

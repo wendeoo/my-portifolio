@@ -4,14 +4,14 @@
             <mat-icon>home</mat-icon>
             <p>home</p>
         </div>
-        <div class="profile" [class.selected]="section === 'profile'" (click)="selectSection('profile')">
-            <mat-icon>person</mat-icon>
-            <p>perfil</p>
-        </div>
         <div class="school" [class.selected]="section === 'school'" (click)="selectSection('school')">
             <mat-icon>school</mat-icon>
             <p>formação</p>
         </div>
+        <div class="projects" [class.selected]="section === 'projects'" (click)="selectSection('projects')">
+            <mat-icon>dashboard</mat-icon>
+            <p>projetos</p>
+        </div>        
         <div class="work" [class.selected]="section === 'work'" (click)="selectSection('work')">
             <mat-icon>work</mat-icon>
             <p>trabalho</p>
