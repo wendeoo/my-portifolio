@@ -1,0 +1,57 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    gap: 32px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+
+        &.visible {
+            opacity: 1;
+        }
+
+    @media only screen and (max-width: 1010px) {
+        margin-top: 120px
+    }
+
+    .formation {        
+        
+        .title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 24px;
+            font-weight: 600;
+            width: 100%;
+
+            mat-icon {
+                width: 24px;
+                height: 24px;
+            }
+
+            @media only screen and (max-width: 1010px) {               
+                font-size: 18px;
+                font-weight: 600;
+                width: 100%;
+            }
+        }
+
+        .entity,
+        .date {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+            width: 100%;
+            padding-left: 4px;
+
+            mat-icon {
+                width: 18px;
+                height: 18px;
+                font-size: 18px;
+            }
+        }  
+    }  
+}
